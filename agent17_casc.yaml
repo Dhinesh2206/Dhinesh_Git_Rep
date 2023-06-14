@@ -15,18 +15,6 @@ jenkins:
   myViewsTabBar: "standard"
   nodes:
   - permanent:
-      labelString: "devops"
-      launcher:
-        ssh:
-          credentialsId: "build-agent-creds"
-          host: "agent"
-          port: 22
-          sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
-      name: "agent"
-      remoteFS: "/home/jenkins/agent"
-      retentionStrategy: "always"
-
-  - permanent:
       labelString: "agent17"
       launcher:
         ssh:
